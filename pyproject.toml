@@ -1,0 +1,23 @@
+[project]
+name = "fastapi-app"
+version = "0.1.0"
+description = "FastAPI application"
+readme = "README.md"
+authors = [
+    { name = "meligi-dev", email = "melgyim123@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "aiosqlite>=0.22.1",
+    "aisqlite>=1.1.0",
+    "fastapi[standard]>=0.161.1",
+    "greenlet>=3.5.6",
+    "sqlalchemy>=2.1.6",
+]
+
+[project.scripts]
+fastapi-app = "fastapi_app:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
